@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Write your global styles here, in PostCSS syntax */
+:root {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page {
+	display: grid;
+	grid-gap: 33px;
+	grid-template:
+	  "head head  head" 1fr
+	  "nav  main  main" minmax(100px, 1fr)
+	  "nav  foot  foot" 2fr /
+	  1fr   100px 1fr;
+  }
+  .page__head {
+	grid-area: head;
+  }
+  .page__nav {
+	grid-area: nav;
+  }
+  .page__main {
+	grid-area: main;
+  }
+  .page__footer {
+	grid-area: foot;
+  }
+:root {
+    --primary: #c13dfa;
+    --primary-rgb: 193,61,250;
+    --primary-contrast: #ffffff;
+    --primary-contrast-rgb: 255,255,255;
+    --primary-shade: #aa36dc;
+    --primary-tint: #c750fb;
+  
+    --secondary: #3dc2ff;
+    --secondary-rgb: 61,194,255;
+    --secondary-contrast: #000000;
+    --secondary-contrast-rgb: 0,0,0;
+    --secondary-shade: #36abe0;
+    --secondary-tint: #50c8ff;
+  
+    --tertiary: #5260ff;
+    --tertiary-rgb: 82,96,255;
+    --tertiary-contrast: #ffffff;
+    --tertiary-contrast-rgb: 255,255,255;
+    --tertiary-shade: #4854e0;
+    --tertiary-tint: #6370ff;
+  
+    --success: #2dd36f;
+    --success-rgb: 45,211,111;
+    --success-contrast: #ffffff;
+    --success-contrast-rgb: 255,255,255;
+    --success-shade: #28ba62;
+    --success-tint: #42d77d;
+  
+    --warning: #ffc409;
+    --warning-rgb: 255,196,9;
+    --warning-contrast: #000000;
+    --warning-contrast-rgb: 0,0,0;
+    --warning-shade: #e0ac08;
+    --warning-tint: #ffca22;
+  
+    --danger: #eb445a;
+    --danger-rgb: 235,68,90;
+    --danger-contrast: #ffffff;
+    --danger-contrast-rgb: 255,255,255;
+    --danger-shade: #cf3c4f;
+    --danger-tint: #ed576b;
+  
+    --dark: #222428;
+    --dark-rgb: 34,36,40;
+    --dark-contrast: #ffffff;
+    --dark-contrast-rgb: 255,255,255;
+    --dark-shade: #1e2023;
+    --dark-tint: #383a3e;
+  
+    --medium: #92949c;
+    --medium-rgb: 146,148,156;
+    --medium-contrast: #ffffff;
+    --medium-contrast-rgb: 255,255,255;
+    --medium-shade: #808289;
+    --medium-tint: #9d9fa6;
+  
+    --light: #f4f5f8;
+    --light-rgb: 244,245,248;
+    --light-contrast: #000000;
+    --light-contrast-rgb: 0,0,0;
+    --light-shade: #d7d8da;
+    --light-tint: #f5f6f9;
+  }
+
+.box {
+   
+    background-image: linear-gradient(
+      45deg,
+      rgba(219, 17, 255, 1) 0%,
+      rgba(31, 236, 241, 0.32) 100%
+    );
+  }
+
+  
+  .card {
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .primary{
+    border-color: var(--primary-color);
+    color:var(--primary-color)
+  }
+  /* Green */
+  .success {
+    border-color: #4CAF50;
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Blue */
+  .info {
+    border-color: #2196F3;
+    color: dodgerblue;
+  }
+  
+  .info:hover {
+    background: #2196F3;
+    color: white;
+  }
+  
+  /* Orange */
+  .warning {
+    border-color: #ff9800;
+    color: orange;
+  }
+  
+  .warning:hover {
+    background: #ff9800;
+    color: white;
+  }
+  
+  /* Red */
+  .danger {
+    border-color: #f44336;
+    color: red;
+  }
+  
+  .danger:hover {
+    background: #f44336;
+    color: white;
+  }
+  
+  /* Gray */
+  .default {
+    border-color: #e7e7e7;
+    color: black;
+  }
+  
+  .default:hover {
+    background: #e7e7e7;
+  }
+
+  .max {
+    height: 100%;
+    width: 100%s;
+  }
